@@ -440,13 +440,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1454BA1519637EDB00344E57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61B5F90109C4CEE200B25A18;
-			remoteInfo = "Sparkle Test App";
-		};
 		1454BA1719637EE900344E57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -2182,7 +2175,6 @@
 				72DBA37A1D5FDE95002594A8 /* PBXTargetDependency */,
 				72F94F6B1CC4A0C8002DEE68 /* PBXTargetDependency */,
 				72F94F6D1CC4A0C8002DEE68 /* PBXTargetDependency */,
-				1454BA1619637EDB00344E57 /* PBXTargetDependency */,
 				14732BCF1960F73500593899 /* PBXTargetDependency */,
 				7205C46B1E13070300E370AE /* PBXTargetDependency */,
 				1454BA1819637EE900344E57 /* PBXTargetDependency */,
@@ -2493,11 +2485,17 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Sparkle Project";
 				TargetAttributes = {
+					5D06E8CF0FD68C7C005AE3F6 = {
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
+					};
 					612279D80DB5470200AB99EA = {
 						LastSwiftMigration = 0800;
 						TestTargetID = 8DC2EF4F0486A6940098B216;
 					};
 					61B5F90109C4CEE200B25A18 = {
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -2506,16 +2504,23 @@
 					};
 					7205C43D1E13049400E370AE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X5AZV975AG;
 						ProvisioningStyle = Automatic;
 					};
 					721C24441CB753E6005440CB = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
 					};
 					724BB36B1D31D0B7005D534A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
 					};
 					724BB3921D333832005D534A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
 					};
 					726B2B5C1C645FC900388755 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -2524,9 +2529,13 @@
 					};
 					726E07AC1CAF08D6001A286B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Manual;
 					};
 					726E07EE1CAF37BD001A286B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -2543,12 +2552,22 @@
 					};
 					72A5D59B1D6927730009E5AC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
 					};
 					72B398D11D3D879300EE297F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
 					};
 					72D9549D1CBB415B006F28BD = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
+					};
+					8DC2EF4F0486A6940098B216 = {
+						DevelopmentTeam = X5AZV975AG;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -2802,7 +2821,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/Configurations/set-agent-signing.sh\"";
+			shellScript = "\"$SRCROOT/Configurations/set-agent-signing.sh\"\n";
 		};
 		729BB3CC1D501A8F007C4276 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3283,11 +3302,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1454BA1619637EDB00344E57 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61B5F90109C4CEE200B25A18 /* Sparkle Test App */;
-			targetProxy = 1454BA1519637EDB00344E57 /* PBXContainerItemProxy */;
-		};
 		1454BA1819637EE900344E57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1420DF491962329200203BB0 /* Documentation */;
@@ -3631,6 +3645,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3638,6 +3656,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72F94EDA1CC36C37002DEE68 /* ConfigTestAppDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3652,6 +3674,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D06E8F10FD68D21005AE3F6 /* ConfigBinaryDelta.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3677,6 +3703,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3684,6 +3714,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D10D94A70100DD942E /* ConfigFramework.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3705,6 +3739,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D06E8F10FD68D21005AE3F6 /* ConfigBinaryDelta.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3712,6 +3750,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D06E8F10FD68D21005AE3F6 /* ConfigBinaryDelta.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3733,6 +3775,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72F94EDA1CC36C37002DEE68 /* ConfigTestAppDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3740,6 +3786,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CD0D94A70100DD942E /* ConfigTestApp.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3748,7 +3798,10 @@
 			baseConfigurationReference = 7205C4541E13054900E370AE /* ConfigGenerateAppcastDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3757,7 +3810,10 @@
 			baseConfigurationReference = 7205C4541E13054900E370AE /* ConfigGenerateAppcastDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3766,7 +3822,10 @@
 			baseConfigurationReference = 7205C4551E13054900E370AE /* ConfigGenerateAppcastRelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3774,6 +3833,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 721C24571CB754E8005440CB /* ConfigInstallerProgress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3781,6 +3844,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 721C24571CB754E8005440CB /* ConfigInstallerProgress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3788,6 +3855,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 721C24571CB754E8005440CB /* ConfigInstallerProgress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3795,6 +3866,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 724BB37F1D31D1EA005D534A /* ConfigInstallerConnectionDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3802,6 +3877,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 724BB37E1D31D1EA005D534A /* ConfigInstallerConnection.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3809,6 +3888,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 724BB37E1D31D1EA005D534A /* ConfigInstallerConnection.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3816,6 +3899,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 724BB3A51D3338C8005D534A /* ConfigInstallerStatusDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3823,6 +3910,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 724BB3A41D3338C8005D534A /* ConfigInstallerStatus.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3830,6 +3921,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 724BB3A41D3338C8005D534A /* ConfigInstallerStatus.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3858,7 +3953,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72F94ED51CC3441A002DEE68 /* ConfigInstallerLauncherDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Max Seelemann (PLFCY79335)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X5AZV975AG;
 				INFOPLIST_FILE = InstallerLauncher/Info.plist;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3866,7 +3965,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72F94ED51CC3441A002DEE68 /* ConfigInstallerLauncherDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Max Seelemann (PLFCY79335)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X5AZV975AG;
 				INFOPLIST_FILE = InstallerLauncher/Info.plist;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3874,7 +3977,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 726E07C11CAF1E79001A286B /* ConfigInstallerLauncher.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Max Seelemann (PLFCY79335)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X5AZV975AG;
 				INFOPLIST_FILE = InstallerLauncher/Info.plist;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3883,6 +3990,10 @@
 			baseConfigurationReference = 72F94ED61CC344A7002DEE68 /* ConfigDownloaderDebug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3891,6 +4002,10 @@
 			baseConfigurationReference = 72F94ED61CC344A7002DEE68 /* ConfigDownloaderDebug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3899,6 +4014,10 @@
 			baseConfigurationReference = 728638EE1CAF589C00783084 /* ConfigDownloader.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3927,6 +4046,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3934,6 +4057,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3941,6 +4068,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D10D94A70100DD942E /* ConfigFramework.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3948,6 +4079,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CE0D94A70100DD942E /* ConfigRelaunch.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3955,6 +4090,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CE0D94A70100DD942E /* ConfigRelaunch.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3962,6 +4101,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CE0D94A70100DD942E /* ConfigRelaunch.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -3970,6 +4113,10 @@
 			baseConfigurationReference = 72D954B01CBB41E2006F28BD /* ConfigSparkleTool.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -3978,6 +4125,10 @@
 			baseConfigurationReference = 72D954B01CBB41E2006F28BD /* ConfigSparkleTool.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
 		};
@@ -3986,6 +4137,10 @@
 			baseConfigurationReference = 72D954B01CBB41E2006F28BD /* ConfigSparkleTool.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5AZV975AG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
