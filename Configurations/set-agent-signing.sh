@@ -4,5 +4,5 @@ AGENT_PATH="${TARGET_BUILD_DIR}"/"${CONTENTS_FOLDER_PATH}"/"MacOS/${SPARKLE_INST
 
 #Only sign the agent app if we have code signing enabled (as we do with adhoc signatures in Debug builds for testing sandboxing)
 if ! [ -z ${CODE_SIGN_IDENTITY}] ; then
-    codesign --verbose -f -s "${CODE_SIGN_IDENTITY}" "${AGENT_PATH}"
+    codesign --verbose --options runtime -f -s "${CODE_SIGN_IDENTITY}" "${AGENT_PATH}"
 fi

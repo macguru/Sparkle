@@ -3833,9 +3833,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 721C24571CB754E8005440CB /* ConfigInstallerProgress.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5AZV975AG;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -3844,9 +3845,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 721C24571CB754E8005440CB /* ConfigInstallerProgress.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5AZV975AG;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Coverage;
@@ -3855,9 +3857,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 721C24571CB754E8005440CB /* ConfigInstallerProgress.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5AZV975AG;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
@@ -3953,7 +3956,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72F94ED51CC3441A002DEE68 /* ConfigInstallerLauncherDebug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer: Max Seelemann (PLFCY79335)";
+				CODE_SIGN_IDENTITY = "Apple Development: Max Seelemann (PLFCY79335)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = X5AZV975AG;
 				INFOPLIST_FILE = InstallerLauncher/Info.plist;
@@ -3965,7 +3968,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72F94ED51CC3441A002DEE68 /* ConfigInstallerLauncherDebug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer: Max Seelemann (PLFCY79335)";
+				CODE_SIGN_IDENTITY = "Apple Development: Max Seelemann (PLFCY79335)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = X5AZV975AG;
 				INFOPLIST_FILE = InstallerLauncher/Info.plist;
@@ -3977,7 +3980,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 726E07C11CAF1E79001A286B /* ConfigInstallerLauncher.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer: Max Seelemann (PLFCY79335)";
+				CODE_SIGN_IDENTITY = "Apple Development: Max Seelemann (PLFCY79335)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = X5AZV975AG;
 				INFOPLIST_FILE = InstallerLauncher/Info.plist;
